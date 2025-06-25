@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./music-thuvien.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Listening music</title>
+</head>
+<body>
+    <div class="main">
+        <!--------------------SIDEBAR-LEFT----------------------->
+        <div class="container">
+         <div class="sidebar-left">
+             <div class="music-mp3">
+             Music MP3
+         </div>
+             <div class="lemon">
+                 <ul>
+                     <li class="hidden"><a href="./mucsic-khampha.html"><i class="fas fa-search" style="margin-left: 20px; margin-right: 10px;"></i> Khám phá</a></li>
+                     <li class="play-icon-li"><a href="./music-baihat.html"><i class="fas fa-comments" style="margin-left: 20px; margin-right: 10px;"></i> Bài hát <i class="fas fa-caret-right play-icon" style="margin-left: 113px;"></i></a></li>
+                     <li class="play-icon-li"><a href="./music-radio.html"><i class="fas fa-volume-up" style="margin-left: 20px; margin-right: 10px;"></i> Radio theo tâm trạng<i class="fas fa-caret-right play-icon" style="margin-left: 24px;"></i></a></li>
+                     <li class="hidden-1"><a href="./music-thuvien.html"><i class="fas fa-book" style="margin-left: 20px; margin-right: 10px;"></i> Thư viện</a></li>
+                 </ul>
+             </div>
+             
+             <div class="sion">
+                 <ul>
+                     <li  class="play-icon-li"><a href="./music-BXH.html"><i class="fas fa-music" style="margin-left: 20px; margin-right: 15px;"></i>BXH Nhạc Mới<i class="fas fa-caret-right play-icon" style="margin-left: 60px;"></i></a></li>
+                     <li><a href="./music-chude-theloai.html"><i class="fas fa-tags" style="margin-left: 20px; margin-right: 10px;"></i> Chủ Đề & Thể Loại</a></li>
+                 </ul>
+                 
+                 </div>
+                 <div class="kame">
+                     <p><b>Đăng nhập để khám phá playlist dành riêng cho bạn</b></p>
+                     <div id="login">
+                     <a href=""><b>Đăng nhập</b></a>
+                 </div>
+             </div>
+             <div class="playlist-new">
+                 <ul>
+                <li><a href=""><i class="fas fa-plus" style="margin-right: 5px;"></i> Tạo playlist mới</a></li>
+             </ul>
+             </div>
+         </div>
+           <!-------------------------------------CONTENT-------------------------------------->
+
+        <div class="content">
+            <div class="search-container">
+                <div class="header">
+                    <a href="" class="arrow-button left"><i class="fas fa-chevron-left" style="margin-left: 20px; margin-right: 10px;color: rgba(240, 248, 255, 0.747);"></i></a>
+                    <a href="" class="arrow-button right"><i class="fas fa-chevron-right" style="margin-right: 20px; margin-left: 10px;color: rgba(240, 248, 255, 0.747)"></i></a>
+                </div>
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Tìm kiếm bài hát,nghệ sĩ,lời bài hát...." >
+                </div>
+                <div class="login-1"> 
+                   <i class="fas fa-user" style="margin-right: 10px;"></i><button id="login-2"><a href="./dangnhap.html">Đăng Nhập</a></button>
+                   <i class="fas fa-sign-in-alt"style="margin-right: 10px;"></i><button><a href="./dangki.html">Đăng Ký</a></button>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="second">
+            <h1 style="font-size: 35px;color: #fffffff1;">Thư viện </h1>
+                </div>
+            <div id="riven">
+            <i class='fas fa-play' style='font-size:20px; color: black;'></i>
+            </div>
+            </div>
+            <div class="second-1">
+                <div class="second-1-1">
+                    <ul id="nav">
+                    <li id="nav-1"><a href="">BÀI HÁT</a></li>
+                    <li id="nav-2"><a href="">PODCAST</a></li>
+                    <li id="nav-3"><a href="">ALBUM</a></li>
+                    <li id="nav-4"><a href="">MV</a></li>
+                </ul>
+                </div>
+            </div>
+            <div class="second-2">
+                <div class="second-2-1">
+                <a href="">YÊU THÍCH</a>
+                </div>
+                <div class="second-2-2">
+                    <a href="">ĐÃ TẢI LÊN</a>
+                </div>
+            </div>
+            <div class="second-3">
+                <div class="second-3-1">
+                    <p>BÀI HÁT</p>
+                </div>
+                <div class="second-3-2">
+                    <p>ALBUM</p>
+                </div>
+                <div class="second-3-3">
+                    <p>THỜI GIAN</p>
+                </div>
+            </div>
+            <!-----------------------ds bài hát----------------------------->
+            <div id="demo">
+                <div class="playlist-1-1">
+                    <a href="./file music/y2mate.com - CUỘC SỐNG EM ỔN KHÔNG  ANH TÚ  OFFICIAL MUSIC VIDEO.mp3"><img src="./img-btl/img34.jpg" style="border-radius: 10px;" width="70px"height="70px" alt="hình ảnh"></a>
+                </div>
+                <div class="seasent">
+                    <a href=""  style="color:white ; margin-left: 10px;text-decoration: none;">Cuộc sống em ổn không <br>
+                    <a href=""  style="color:#ffffffd7 ; margin-left: 10px;text-decoration: none;font-size:14px ;">Anh Tú</a></a>
+                </div>
+                <div class="seasent-1">
+                    <a href="" style="color:#ffffffd7 ; margin-left: 10px;text-decoration: none;">Cuộc sống em ổn không (Single)</a>
+                </div>
+                <div class="seasent-1-1">
+                    <i class="fa fa-heart" style="font-size:18px;margin-right: 12px;color:darkorchid;"></i> 05:44
+                </div>
+            </div>
+            <div id="demo-1">
+                <div class="playlist-1-1">
+                    <a href="./file music/y2mate.com - CUỘC SỐNG EM ỔN KHÔNG  ANH TÚ  OFFICIAL MUSIC VIDEO.mp3"><img src="./img-btl/img41.jpg" style="border-radius: 10px;" width="70px"height="70px" alt="hình ảnh"></a>
+                </div>
+                <div class="seasent">
+                    <a href=""  style="color:white ; margin-left: 10px;text-decoration: none;">Anh là của em <br>
+                    <a href=""  style="color:#ffffffd7 ; margin-left: 10px;text-decoration: none;font-size:14px ;">Karik</a></a>
+                </div>
+                <div class="seasent-2">
+                    <a href="" style="color:#ffffffd7 ; margin-left: 10px;text-decoration: none;">Enjoy your life</a>
+                </div>
+                <div class="seasent-2-1">
+                    <i class="fa fa-heart" style="font-size:18px;margin-right: 12px;color:darkorchid;"></i> 03:36
+                </div>
+            </div>
+            <div id="demo-2">
+                <div class="playlist-1-1">
+                    <a href="./file music/y2mate.com - CUỘC SỐNG EM ỔN KHÔNG  ANH TÚ  OFFICIAL MUSIC VIDEO.mp3"><img src="./img-btl/thuvien.1.jpg" style="border-radius: 10px;" width="70px"height="70px" alt="hình ảnh"></a>
+                </div>
+                <div class="seasent">
+                    <a href=""  style="color:white ; margin-left: 10px;text-decoration: none;">Thất tình<br>
+                    <a href=""  style="color:#ffffffd7 ; margin-left: 10px;text-decoration: none;font-size:14px ;">Trịnh Đình Quang</a></a>
+                </div>
+                <div class="seasent-3">
+                    <a href="" style="color:#ffffffd7 ; margin-left: 10px;text-decoration: none;"></a>
+                </div>
+                <div class="seasent-3-1">
+                    <i class="fa fa-heart" style="font-size:18px;margin-right: 12px;color:darkorchid;"></i> 06:34
+                </div>
+            </div>
+            <div id="demo-3">
+                <div class="playlist-1-1">
+                    <a href="./file music/y2mate.com - CUỘC SỐNG EM ỔN KHÔNG  ANH TÚ  OFFICIAL MUSIC VIDEO.mp3"><img src="./img-btl/thuvien2.jpg" style="border-radius: 10px;" width="70px"height="70px" alt="hình ảnh"></a>
+                </div>
+                <div class="seasent">
+                    <a href=""  style="color:white ; margin-left: 10px;text-decoration: none;">Đáp án cuối cùng<br>
+                    <a href=""  style="color:#ffffffd7 ; margin-left: 10px;text-decoration: none;font-size:14px ;">Quân AP</a></a>
+                </div>
+                <div class="seasent-4">
+                    <a href="" style="color:#ffffffd7 ; margin-left: 10px;text-decoration: none;">Đáp án cuối cùng (Single)</a>
+                </div>
+                <div class="seasent-4-1">
+                    <i class="fa fa-heart" style="font-size:18px;margin-right: 12px;color:darkorchid;"></i> 04:51
+                </div>
+            </div>
+            <div id="demo-4">
+                <div class="playlist-1-1">
+                    <a href="./file music/y2mate.com - CUỘC SỐNG EM ỔN KHÔNG  ANH TÚ  OFFICIAL MUSIC VIDEO.mp3"><img src="./img-btl/thuvien3.jpg" style="border-radius: 10px;" width="70px"height="70px" alt="hình ảnh"></a>
+                </div>
+                <div class="seasent">
+                    <a href=""  style="color:white ; margin-left: 10px;text-decoration: none;">Nếu không thể đến với nhau<br>
+                    <a href=""  style="color:#ffffffd7 ; margin-left: 10px;text-decoration: none;font-size:14px ;">Trịnh Đình Quang</a></a>
+                </div>
+                <div class="seasent-5">
+                    <a href="" style="color:#ffffffd7 ; margin-left: 10px;text-decoration: none;">Nếu không thể đến với nhau (Single)</a>
+                </div>
+                <div class="seasent-5-1">
+                    <i class="fa fa-heart" style="font-size:18px;margin-right: 12px;color:darkorchid;"></i> 05:27
+                </div>
+            </div>
+            <div id="demo-5">
+                <div class="playlist-1-1">
+                    <a href="./file music/y2mate.com - CUỘC SỐNG EM ỔN KHÔNG  ANH TÚ  OFFICIAL MUSIC VIDEO.mp3"><img src="./img-btl/thuvien4.jpg" style="border-radius: 10px;" width="70px"height="70px" alt="hình ảnh"></a>
+                </div>
+                <div class="seasent">
+                    <a href=""  style="color:white ; margin-left: 10px;text-decoration: none;">Phía sau một cô gái<br>
+                    <a href=""  style="color:#ffffffd7 ; margin-left: 10px;text-decoration: none;font-size:14px ;">SOOBIN</a></a>
+                </div>
+                <div class="seasent-6">
+                    <a href="" style="color:#ffffffd7 ; margin-left: 10px;text-decoration: none;">Phía sau một cô gái (Single)</a>
+                </div>
+                <div class="seasent-6-1">
+                    <i class="fa fa-heart" style="font-size:18px;margin-right: 12px;color:darkorchid;"></i> 04:30
+                </div>
+            </div>
+            <div id="demo-6">
+                <div class="playlist-1-1">
+                    <a href="./file music/y2mate.com - CUỘC SỐNG EM ỔN KHÔNG  ANH TÚ  OFFICIAL MUSIC VIDEO.mp3"><img src="./img-btl/thuvien5.jpg" style="border-radius: 10px;" width="70px"height="70px" alt="hình ảnh"></a>
+                </div>
+                <div class="seasent">
+                    <a href=""  style="color:white ; margin-left: 10px;text-decoration: none;">Kẻ theo đuổi ánh sáng<br>
+                    <a href=""  style="color:#ffffffd7 ; margin-left: 10px;text-decoration: none;font-size:14px ;">Huy Vạc</a></a>
+                </div>
+                <div class="seasent-7">
+                    <a href="" style="color:#ffffffd7 ; margin-left: 10px;text-decoration: none;">Kẻ theo đuổi ánh sáng (Single)</a>
+                </div>
+                <div class="seasent-7-1">
+                    <i class="fa fa-heart" style="font-size:18px;margin-right: 12px;color:darkorchid;"></i> 03:43
+                </div>
+            </div>
+            <div id="demo-7">
+                <div class="playlist-1-1">
+                    <a href="./file music/y2mate.com - CUỘC SỐNG EM ỔN KHÔNG  ANH TÚ  OFFICIAL MUSIC VIDEO.mp3"><img src="./img-btl/thuvien6.jpg" style="border-radius: 10px;" width="70px"height="70px" alt="hình ảnh"></a>
+                </div>
+                <div class="seasent">
+                    <a href=""  style="color:white ; margin-left: 10px;text-decoration: none;">Yêu từ trong ra ngoài<br>
+                    <a href=""  style="color:#ffffffd7 ; margin-left: 10px;text-decoration: none;font-size:14px ;">Doãn Hiếu</a></a>
+                </div>
+                <div class="seasent-8">
+                    <a href="" style="color:#ffffffd7 ; margin-left: 10px;text-decoration: none;">Yêu từ trong ra ngoài  (Single)</a>
+                </div>
+                <div class="seasent-8-1">
+                    <i class="fa fa-heart" style="font-size:18px;margin-right: 12px;color:darkorchid;"></i> 03:45
+                </div>
+            </div>
+            <div id="demo-8">
+                <div class="playlist-1-1">
+                    <a href="./file music/y2mate.com - CUỘC SỐNG EM ỔN KHÔNG  ANH TÚ  OFFICIAL MUSIC VIDEO.mp3"><img src="./img-btl/thuvien7.jpg" style="border-radius: 10px;" width="70px"height="70px" alt="hình ảnh"></a>
+                </div>
+                <div class="seasent">
+                    <a href=""  style="color:white ; margin-left: 10px;text-decoration: none;">Ghé vào tai<br>
+                    <a href=""  style="color:#ffffffd7 ; margin-left: 10px;text-decoration: none;font-size:14px ;">UMIE, Freaky, Hổ</a></a>
+                </div>
+                <div class="seasent-9">
+                    <a href="" style="color:#ffffffd7 ; margin-left: 10px;text-decoration: none;">Ghé vào tai (Single)</a>
+                </div>
+                <div class="seasent-9-1">
+                    <i class="fa fa-heart" style="font-size:18px;margin-right: 12px;color:darkorchid;"></i> 02:35
+                </div>
+            </div>
+            <div id="demo-9">
+                <div class="playlist-1-1">
+                    <a href="./file music/y2mate.com - CUỘC SỐNG EM ỔN KHÔNG  ANH TÚ  OFFICIAL MUSIC VIDEO.mp3"><img src="./img-btl/thuvien8.jpg" style="border-radius: 10px;" width="70px"height="70px" alt="hình ảnh"></a>
+                </div>
+                <div class="seasent">
+                    <a href=""  style="color:white ; margin-left: 10px;text-decoration: none;">Giờ không cưới thì nào cưới<br>
+                    <a href=""  style="color:#ffffffd7 ; margin-left: 10px;text-decoration: none;font-size:14px ;">Hồng quân WyTy, Young P</a></a>
+                </div>
+                <div class="seasent-10">
+                    <a href="" style="color:#ffffffd7 ; margin-left: 10px;text-decoration: none;">Giờ không cưới thì nào cưới (Single)</a>
+                </div>
+                <div class="seasent-10-1">
+                    <i class="fa fa-heart" style="font-size:18px;margin-right: 12px;color:darkorchid;"></i> 03:30
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

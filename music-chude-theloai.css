@@ -1,0 +1,346 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: #323a46;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------SIDEBAR-left-----------------*/
+
+.music-mp3 {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 28px; 
+    color: #69cebd; 
+    text-transform: uppercase; /* Chuyển đổi chữ thành in hoa */
+    letter-spacing: 2px; /* Khoảng cách giữa các ký tự */
+    font-weight: bold; /* Độ đậm của chữ */
+    text-shadow: 2px 2px 2px rgba(243, 229, 229, 0.5); /* Hiệu ứng bóng đổ */
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    
+}
+  /* CSS cho container bao quanh sidebar và content */
+  .container {
+    display: flex; /* Hiển thị các phần tử con theo chiều ngang */
+}
+
+/* CSS cho sidebar-left */
+.sidebar-left {
+    position: fixed; /* Cố định sidebar */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 15%; /* Độ rộng của sidebar */
+    background-color: #533464;
+    overflow: hidden; /* Ngăn thanh cuộn xuất hiện */
+}
+
+/* CSS cho phần nội dung chính */
+.content {
+    flex: 1; /* Để nội dung chính tự động mở rộng để lấp đầy không gian trống */
+    margin-left: 15%; /* Độ rộng của sidebar-left */
+    padding: 20px; /* Khoảng đệm bên phải để tránh che khuất */
+}
+.sidebar-left .music-mp3 {
+    line-height: 60px;
+    padding-top: 12px;
+}
+
+#sidebar-left-1 {
+    font-size: 28px;
+    text-align: center;
+}
+.lemon {
+    border-bottom: 1px solid #ffffff5e;
+}
+.lemon li {
+    padding: 10px;
+    line-height: 30px;
+}
+.lemon li a {
+    text-decoration: none;
+    color: #ffffffcb;
+    
+}
+/* Sửa đổi màu nền khi hover */
+.lemon li:hover {
+    color: white;
+}
+
+/* Sửa đổi màu chữ khi hover */
+.lemon li:hover a {
+    color: #fff;
+    display: block;
+}
+
+.lemon ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.sion .sion-2 {
+    background-color: rgb(148, 29, 150);
+    border-left: 6px solid rgb(68, 0, 62);
+}
+.sion .sion-1 #read {
+    display: none;
+}
+
+/* CSS cho biểu tượng mũi tên ngang và biểu tượng phát nhạc */
+.play-icon-li .play-icon {
+    margin-left: 5px; /* Khoảng cách giữa biểu tượng và văn bản */
+    display: none; /* Ẩn ban đầu */
+    transform: rotate(0deg); /* Ban đầu biểu tượng mũi tên ngang */
+    transition: transform 0.3s ease; /* Hiệu ứng chuyển đổi */
+}
+
+/* CSS khi hover vào li (mục "Zing Chat" và "Radio") */
+.play-icon-li:hover .play-icon {
+    display: inline; /* Hiển thị biểu tượng */
+    transform: rotate(90deg); /* Quay biểu tượng mũi tên ngang */
+}
+
+
+.sion li a {
+    text-decoration: none;
+    color: #ffffffcb;
+}
+.sion li {
+    padding: 10px;
+    line-height: 30px;
+}
+.sion li:hover {
+    color: white;
+}
+.sion li:hover a {
+    color: #fff;
+    display: block;
+}
+.sion ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.kame {
+    padding: 3px 10px 15px 10px;
+    background-color: #c433f0;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+.kame p {
+    color: #fff;
+    text-align: center;
+}
+.kame a {
+   text-decoration: none;
+   color: #fff;
+}
+.kame #login {
+    text-align: center;
+    border-radius: 15px;
+    background-color: #c433f0;
+    width: 160px;
+    line-height: 30px;
+    margin-left: 24px;
+    margin-top: 0px;
+    border: 1px solid #fff;
+}
+.playlist-new {
+    border-top: 1px solid #ffffff5e ;
+    margin-top: 345px;
+}
+.playlist-new a {
+    text-decoration: none;
+    color: #ffffffcb;
+}
+.playlist-new ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    text-align: center;
+}
+
+.playlist-new li:hover {
+    background-color: #533464;
+}   
+.playlist-new li:hover a{
+    color: #fff;
+    display: block;
+}
+/*--------------------------CONTENT--------------------*/
+/* CSS cho mục tìm kiếm */
+
+.search-box {  
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    width: 500px; /* Độ rộng của thanh tìm kiếm */
+    position: relative; /* Đặt vị trí tương đối để các phần tử con có thể được đặt tương đối đối với nó */
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    width: 100%; /* Độ rộng của input bên trong thanh tìm kiếm */
+}
+.header {
+    margin-top: 13px;
+    
+}
+.search-container {
+    display: flex;
+    position: fixed; /* Đặt vị trí cố định */
+    top: 0; /* Vị trí cố định ở phía trên */
+    left: 0; /* Vị trí cố định ở phía trái */
+    width: 100%; /* Chiều rộng 100% để nó che khuất toàn bộ màn hình */
+    z-index: 999; /* Đảm bảo phần tử này nằm trên các phần tử khác */
+    margin-left: 500px;
+    margin-top: 25px;
+}
+
+.search-icon {
+    color: #333;
+    position: absolute; /* Đặt vị trí tuyệt đối để đặt kính lúp */
+    right: 10px; /* Độ rộng lề bên phải của kính lúp */
+    top: 50%; /* Đặt vị trí theo chiều cao giữa của kính lúp */
+    transform: translateY(-50%); /* Dịch chuyển lên để căn giữa kính lúp theo chiều dọc */
+}
+.login-1 button {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+}
+.search-container .login-1 #login-2 {
+    background-color: #b65fd8;
+    margin-right: 10px;
+}
+.search-container .login-1 #login-2 a{
+    text-decoration: none;
+    color: #333;
+}
+.search-container .login-1 button {
+    background-color: rgb(12, 146, 163);
+}
+.search-container .login-1 button a {
+    text-decoration: none;
+    color: #fff;
+}
+.login-1  {
+    margin-left: 400px;
+}
+
+/*-----------------------------BOLERO-------------------------------*/
+
+#playlist-1 {
+    display: flex;
+    flex-direction: column;
+}
+.playlist .second {
+    display: flex;
+}
+.playlist .second  img {
+    margin-left: 40px;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out; /* Thêm hiệu ứng chuyển động mượt hơn */
+}
+
+/* Thêm CSS khi di chuột vào ảnh */
+.playlist .second  img:hover {
+    transform: scale(1.05); /* Phóng to ảnh khi di chuột vào */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ */
+}
+
+
+/*-------------------CHILL---------------*/
+.content .playlist{
+    margin-top: 120px;
+}
+.playlist .second-1 {
+    display: flex;
+}
+.playlist .second-1 img {
+    margin-left: 40px;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out; /* Thêm hiệu ứng chuyển động mượt hơn */
+}
+.playlist .second-1 img:hover {
+    transform: scale(1.05); /* Phóng to ảnh khi di chuột vào */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ */
+}
+/*-----------------một chút yêu đời------*/
+.playlist .second-2 {
+    display: flex;
+}
+.playlist .second-2 img {
+    margin-left: 40px;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out; /* Thêm hiệu ứng chuyển động mượt hơn */
+}
+.playlist .second-2 img:hover {
+    transform: scale(1.05); /* Phóng to ảnh khi di chuột vào */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ */
+}
+
+/*-------------remix--------------*/
+.playlist .second-3 {
+    display: flex;
+}
+.playlist .second-3 img {
+    margin-left: 40px;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out; /* Thêm hiệu ứng chuyển động mượt hơn */
+}
+.playlist .second-3 img:hover {
+    transform: scale(1.05); /* Phóng to ảnh khi di chuột vào */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ */
+}
+/*--------------10 bài hát hay nhất-----------*/
+.playlist .second-4 {
+    display: flex;
+}
+.playlist .second-4 img {
+    margin-left: 40px;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out; /* Thêm hiệu ứng chuyển động mượt hơn */
+}
+.playlist .second-4 img:hover {
+    transform: scale(1.05); /* Phóng to ảnh khi di chuột vào */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ */
+}
+
+.playlist .second-3 {
+    display: flex;
+}
+.playlist .second-3 img {
+    margin-left: 40px;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out; /* Thêm hiệu ứng chuyển động mượt hơn */
+}
+.playlist .second-3 img:hover {
+    transform: scale(1.05); /* Phóng to ảnh khi di chuột vào */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ */
+}
+
+.playlist .secont {
+    display: flex;
+    margin-bottom: 1px;
+}
+.playlist .secont img {
+    margin-left: 40px;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out; /* Thêm hiệu ứng chuyển động mượt hơn */
+}
+.playlist .secont img:hover {
+    transform: scale(1.05); /* Phóng to ảnh khi di chuột vào */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ */
+}
